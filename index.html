@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Moyo ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050817;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.script {
+    font-family: 'Great Vibes', cursive;
+}
+
+.stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, white, transparent),
+      radial-gradient(2px 2px at 100px 150px, white, transparent),
+      radial-gradient(1px 1px at 200px 80px, white, transparent),
+      radial-gradient(2px 2px at 300px 200px, white, transparent),
+      radial-gradient(1px 1px at 400px 50px, white, transparent),
+      radial-gradient(2px 2px at 500px 300px, white, transparent);
+    background-size: 550px 350px;
+    animation: twinkle 5s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: .35; }
+    to { opacity: 1; }
+}
+
+.heart {
+    color: #ff5c93;
+    animation: heartbeat 1.5s infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+}
+
+/* INTRO */
+
+#home {
+    background:
+      radial-gradient(circle at 50% 40%, #245d83, #101b3d 55%, #030613);
+}
+
+.moon {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fff6d9;
+    box-shadow: 0 0 35px #fff3bd, 0 0 100px #a8d8ff;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.moon:after {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background: #b9d2db;
+    opacity: .22;
+    top: 15px;
+    left: 20px;
+}
+
+#home h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    font-weight: 400;
+}
+
+#home p {
+    margin-top: 15px;
+    color: #d9e5f7;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 50px;
+    background: #ff5689;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s;
+    box-shadow: 0 0 25px #ff568966;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: #ff2f76;
+}
+
+/* STORY */
+
+#story {
+    background: linear-gradient(180deg, #071329, #102d4a, #080b20);
+}
+
+.story-card {
+    max-width: 650px;
+    line-height: 2;
+    font-size: 16px;
+    color: #dce6f7;
+    margin-top: 25px;
+}
+
+.story-title {
+    font-size: clamp(38px, 7vw, 65px);
+    color: #ff9dbb;
+    font-weight: 400;
+}
+
+/* GALLERY */
+
+#gallery {
+    background: #090e20;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #ff7aab22;
+    transition: .4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+/* MESSAGE */
+
+#message {
+    background: linear-gradient(160deg, #101a3b, #411b43, #080b20);
+}
+
+.message-box {
+    max-width: 700px;
+    line-height: 2.1;
+    font-size: 16px;
+    color: #f4dce8;
+    padding: 25px;
+}
+
+.message-box h2 {
+    font-size: clamp(40px, 8vw, 70px);
+    color: #ff9fbd;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* FINAL QUESTION */
+
+#proposal {
+    background:
+      radial-gradient(circle at 50% 40%, #54264c, #15112c 55%, #030612);
+}
+
+#proposal h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    font-weight: 400;
+    color: #ff9cbb;
+    margin-bottom: 20px;
+}
+
+#proposal h2 {
+    font-size: clamp(22px, 5vw, 38px);
+    line-height: 1.5;
+    margin: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.yes {
+    background: #ff4785;
+    padding: 17px 45px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.no {
+    background: #30344a;
+    padding: 17px 45px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#answer {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #ffb1ca;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #030612;
+    color: #a9a9bd;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .moon {
+        width: 140px;
+        height: 140px;
+    }
+
+    .moon:after {
+        width: 130px;
+        height: 130px;
+    }
+
+    .gallery img {
+        height: 260px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME -->
+<section id="home">
+    <div class="stars"></div>
+
+    <div class="moon"></div>
+
+    <h1 class="script">For You, Moyo ❤️</h1>
+
+    <p>SOME THINGS ARE TOO BEAUTIFUL TO KEEP UNSAID.</p>
+
+    <button class="btn" onclick="document.getElementById('story').scrollIntoView()">
+        Open Your Surprise ✨
+    </button>
+</section>
+
+
+<!-- STORY -->
+<section id="story">
+    <div class="stars"></div>
+
+    <h1 class="script story-title">It All Starts With You...</h1>
+
+    <div class="story-card">
+        <p>
+            Moyo, have you ever wondered how one person can
+            make an ordinary day feel a little more special?
+        </p>
+
+        <br>
+
+        <p>
+            Sometimes, it's not about how long you've known
+            someone. It's about how they make you feel,
+            the smile they bring to your face, and the little
+            moments that stay in your heart.
+        </p>
+
+        <br>
+
+        <p>
+            And somehow, you've become someone I genuinely
+            look forward to talking to and knowing better.
+        </p>
+
+        <br>
+
+        <h2 class="script" style="font-size:45px;color:#ff9cbb;">
+            You are special, Moyo. ❤️
+        </h2>
+    </div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+    <div class="stars"></div>
+
+    <h1 class="script story-title">Under The Same Sky 🌙</h1>
+
+    <p style="margin-top:15px;color:#ccd5eb;">
+        Every beautiful story deserves a beautiful beginning.
+    </p>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800"
+             alt="Romantic couple">
+
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800"
+             alt="Romantic moment">
+
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+             alt="Beautiful sunset">
+
+    </div>
+</section>
+
+
+<!-- HEARTFELT MESSAGE -->
+<section id="message">
+    <div class="stars"></div>
+
+    <div class="message-box">
+
+        <h2 class="script">Dear Moyo...</h2>
+
+        <p>
+            I don't know what the future holds, but I know
+            that getting to know you is something I would
+            love to experience.
+        </p>
+
+        <br>
+
+        <p>
+            I want to share laughter with you, create
+            beautiful memories, support you, celebrate your
+            wins, and be someone who makes you smile.
+        </p>
+
+        <br>
+
+        <p>
+            I'm not promising a perfect story, but I would
+            love the opportunity to write a beautiful one
+            together.
+        </p>
+
+        <br>
+
+        <h2 class="script">
+            And now, there's something I want to ask you...
+        </h2>
+
+        <button class="btn"
+          onclick="document.getElementById('proposal').scrollIntoView()">
+            One Last Thing ❤️
+        </button>
+
+    </div>
+</section>
+
+
+<!-- THE BIG QUESTION -->
+<section id="proposal">
+    <div class="stars"></div>
+
+    <div class="moon"></div>
+
+    <h1 class="script">Moyo, My Special Girl ❤️</h1>
+
+    <h2>
+        Will you make me the happiest person<br>
+        and be my girlfriend?
+    </h2>
+
+    <p style="color:#e4c8dd;margin-top:15px;">
+        I'd love to start something beautiful with you.
+    </p>
+
+    <div class="buttons">
+
+        <button class="yes" onclick="sayYes()">
+            YES ❤️
+        </button>
+
+        <button class="no" onclick="sayNo()">
+            NO 🙈
+        </button>
+
+    </div>
+
+    <div id="answer"></div>
+
+</section>
+
+
+<footer>
+    Made with love, just for Moyo ❤️
+    <br><br>
+    A little website, a big question.
+</footer>
+
+
+<script>
+
+function sayYes() {
+
+    document.getElementById("answer").innerHTML =
+    "YOU JUST MADE ME SMILE SO MUCH! 😭❤️" +
+    "<br><br>" +
+    "Thank you, Moyo! Here's to beautiful memories, " +
+    "genuine love and an amazing journey together. 💍" +
+    "<br><br>" +
+    "I'M SO HAPPY! ❤️";
+
+    createHearts();
+}
+
+function sayNo() {
+
+    document.getElementById("answer").innerHTML =
+    "It's okay, Moyo ❤️ I respect your feelings. " +
+    "Your happiness matters to me. 😊";
+
+}
+
+function createHearts() {
+
+    for (let i = 0; i < 35; i++) {
+
+        let heart = document.createElement("div");
+
+        heart.innerHTML = "❤️";
+
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.bottom = "-30px";
+        heart.style.fontSize = (15 + Math.random() * 25) + "px";
+        heart.style.zIndex = "9999";
+        heart.style.pointerEvents = "none";
+        heart.style.transition = "transform 4s linear, opacity 4s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.style.transform =
+                "translateY(-110vh) rotate(360deg)";
+            heart.style.opacity = "0";
+        }, 100);
+
+        setTimeout(() => heart.remove(), 4200);
+    }
+}
+
+</script>
+
+</body>
+</html>
